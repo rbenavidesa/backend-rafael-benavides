@@ -1,0 +1,19 @@
+{
+	"name": "prueba_tecnica_01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "js_tech_test.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon --inspect js_tech_test.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^8.10.0"
+	},
+	"dependencies": {
+		"axios": "^0.26.0"
+	}
+}
