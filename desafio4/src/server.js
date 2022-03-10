@@ -72,7 +72,7 @@ routerProductos.delete('/:id', async (req, res) => {
 	}
 });
 
-const PORT = 8081;
+const PORT = 8080;
 const server = app.listen(PORT, async () => {
 	// Se ejecuta el constructor de la clase
 	container = new Contenedor('./src/productos.txt');
