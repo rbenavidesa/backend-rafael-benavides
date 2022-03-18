@@ -1,0 +1,37 @@
+html
+    head 
+        title='Mi primer PUG'
+    body 
+        div(class="container" style="width:50%")
+            div(class="starter-template")
+                h1(class='text-primary')='Ingrese Producto'
+
+                form(action='/api/productos' method='post')
+                    
+                    div(class='form-group row')
+                        label(for='title' class='col-sm-2 col-form-label')='Nombre:'
+                        div(class='col-sm-10')
+                            input(class='form-control' type='text' name='title')
+
+                    div(class='form-group row')
+                        label(for='price' class='col-sm-2 col-form-label')='Precio:'
+                        div(class='col-sm-10')
+                            input(class='form-control' type='text' name='price')
+                    
+                    div(class='form-group row')
+                        label(for='thumbnail' class='col-sm-2 col-form-label')='URL:'
+                        div(class='col-sm-10')
+                            input(class='form-control' type='text' name='thumbnail')
+
+                    div(class='form-group row' style='padding-top: 10px')
+                        div(class='col-sm-10')
+                            button(type='submit' class='btn btn-success')='Enviar'
+                            button(style='margin-left: 5px' formmethod='GET' formaction='/api/productos' class='btn btn-primary')='Listar Productos'
+					        
+                        
+
+
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous')
+
+    
+
