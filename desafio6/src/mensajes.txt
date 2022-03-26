@@ -1,0 +1,17 @@
+[
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": "03-09-2022 01:01:01",
+      "message":"Hola curso!"
+   },
+   {
+      "email":"pedro@hotmail.com",
+      "timestamp": "03-09-2022 01:01:10",
+      "message":"Hola! Como te va?"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": "03-09-2022 01:01:20",
+      "message":"Excelente"
+   }
+]   

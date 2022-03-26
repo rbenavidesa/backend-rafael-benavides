@@ -1,0 +1,118 @@
+<div class='container' style='width:50%'>
+	<div class='starter-template'>
+		
+		{{>product-form}}
+
+		<div id='products-table'></div>
+
+		{{>messages-form}}
+	</div>
+</div>
+
+<script>
+	const socket = io(); 
+	socket.on('productListBack',(data)=>{ 
+		
+		let innerText = '';
+
+		if (data.length == 0) {
+			innerText =` 
+				<div class='alert alert-warning' role='alert'>
+					No se encontraron productos
+				</div>`;
+		}else{
+			innerText =` 
+				<table class='table table-dark'> 
+					<thead>
+						<tr> 
+							<th scope='col'>Nombre</th> 
+							<th scope='col'>Precio</th> 
+							<th scope='col'>Foto</th> 
+						</tr> 
+					</thead>`;
+			
+			data.map((product)=>{ 
+				
+				innerText+=` 
+					<tr>
+						<td>${product.title}</td> 
+						<td>${product.price}</td> 
+						<td><img src='${product.thumbnail}' alt=''class='img-thumbnail' style='width:5%' alt='Imagen no encontrada' /></td> 
+					</tr>`; 
+			});
+			innerText +=`</table>`;
+		}
+		
+		document.getElementById('products-table').innerHTML = innerText;
+		
+	});
+
+	socket.on('messageListBack',(data)=>{ 
+		
+		let innerText = '';
+
+		if (data.length == 0) {
+			innerText =` 
+				<div class='alert alert-warning' role='alert'>
+					Por el momento no hay mensajes almacenados
+				</div>`;
+		}else{
+			
+			
+			data.map((message)=>{ 
+				
+				innerText+=`
+					<div class='form-group row'>
+						<p>
+							<span style="color: blue;"> <b>${message.email}</b></span>
+							<span style="color: brown;"> ${message.timestamp} </span>
+							<span style="color: green;"> <i>: ${message.message} </i></span>
+						</p>
+					</div>`; 
+			});
+		}
+		
+		document.getElementById('message-list').innerHTML = innerText;
+		
+	});
+
+	function addProduct(){
+    	const title = document.getElementById('title').value;
+      	const price = document.getElementById('price').value;
+	  	const thumbnail = document.getElementById('thumbnail').value;
+      	
+		socket.emit('productFront',{
+			title,
+			price,       
+			thumbnail
+		});
+      	
+		document.getElementById('title').value='';
+		document.getElementById('price').value='';
+		document.getElementById('thumbnail').value='';
+    }
+
+	function sendMessage(){
+    	const email = document.getElementById('email').value;
+      	const message = document.getElementById('message').value;
+
+		if(message == '' || !validateEmail(email))
+		{
+			alert("Debes ingresar un email válido y contenido en el campo de mensaje para poder enviar un comentario.");
+			return;
+		}
+
+		socket.emit('messageFront',{
+            email,
+            message
+        });
+        
+        document.getElementById('message').value='';
+		
+    }
+
+	function validateEmail(email){
+  		return email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+	}
+
+</script>
