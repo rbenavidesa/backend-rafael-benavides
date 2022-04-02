@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "a68aafb6-4e53-4d0f-929d-fd5822f769c6",
+		"name": "Primera entrega proyecto final - Productos Glitch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET '/api/productos'",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://excellent-aeolian-dungeon.glitch.me/api/productos/",
+					"protocol": "https",
+					"host": [
+						"excellent-aeolian-dungeon",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				},
+				"description": "Devuelve todos los productos."
+			},
+			"response": []
+		},
+		{
+			"name": "GET '/api/productos/:id'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://excellent-aeolian-dungeon.glitch.me/api/productos/:id",
+					"protocol": "https",
+					"host": [
+						"excellent-aeolian-dungeon",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"productos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Devuelve un producto según su id."
+			},
+			"response": []
+		},
+		{
+			"name": "POST '/api/productos'",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Lápiz\",\n    \"description\":\"Herramienta para escribir\",\n    \"code\": \"prod-004\",\n    \"price\":500,\n    \"thumbnail\":\"https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-256.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://excellent-aeolian-dungeon.glitch.me/api/productos/",
+					"protocol": "https",
+					"host": [
+						"excellent-aeolian-dungeon",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				},
+				"description": "Recibe y agrega un producto, y lo devuelve con su id asignado."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT '/api/productos/:id'",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Lápiz\",\n    \"description\":\"Herramienta para escribir\",\n    \"code\": \"prod-004\",\n    \"price\":500,\n    \"thumbnail\":\"https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-256.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://excellent-aeolian-dungeon.glitch.me/api/productos/:id",
+					"protocol": "https",
+					"host": [
+						"excellent-aeolian-dungeon",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"productos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Recibe y actualiza un producto según su id."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE '/api/productos/:id'",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://excellent-aeolian-dungeon.glitch.me/api/productos/:id",
+					"protocol": "https",
+					"host": [
+						"excellent-aeolian-dungeon",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api",
+						"productos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Elimina un producto según su id."
+			},
+			"response": []
+		}
+	]
+}

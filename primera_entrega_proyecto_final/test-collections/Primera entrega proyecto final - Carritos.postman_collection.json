@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "2daba512-0a28-451c-a7f7-a490cc2ef8b0",
+		"name": "Primera entrega proyecto final - Carritos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET '/api/carrito/:id/productos'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/:id/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						":id",
+						"productos"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Devuelve el listado de productos contenido en el carrito según el id del carrito ingresado como parámetro"
+			},
+			"response": []
+		},
+		{
+			"name": "POST '/api/carrito'",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						""
+					]
+				},
+				"description": "Crea un carrito nuevo. Al crear el carrito le asigna un id y timestamp así como un listado de productos vacío."
+			},
+			"response": []
+		},
+		{
+			"name": "POST '/api/carrito/:id/productos'",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":3,\n    \"timestamp\":\"03-09-2022 01:01:20\",\n    \"name\":\"Globo Terráqueo\",\n    \"description\":\"Objeto que busca representar al planeta Tierra\",\n    \"code\":\"prod-003\",\n    \"price\":345.67,\n    \"thumbnail\":\"https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/:id/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						":id",
+						"productos"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Recibe un producto y lo agrega al listado de productos del carrito según el id del carrito especificado. El timestamp del carrito es actualizado al actualziar su listado de productos."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE '/api/carrito/:id'",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				},
+				"description": "Elimina un carrito según su id."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE '/api/carrito/:idproductos/:id_prod'",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/:id/productos/:id_prod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						":id",
+						"productos",
+						":id_prod"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "string"
+						},
+						{
+							"key": "id_prod",
+							"value": "3",
+							"type": "string"
+						}
+					]
+				},
+				"description": "Elimina un producto según su id_prod dentro del carrito cuyo id se escifica."
+			},
+			"response": []
+		}
+	]
+}
