@@ -1,0 +1,266 @@
+// Puntos 1 y 2 Agregar 10 documentos con valores distintos a las colecciones mensajes y productos. 
+// El formato de los documentos debe estar en correspondencia con el 
+// que venimos utilizando en el entregable con base de datos MariaDB. 
+// Definir las claves de los documentos en relación a los campos de las tablas de esa base. 
+// En el caso de los productos, poner valores al campo precio entre los 100 y 5000 pesos(eligiendo valores intermedios, 
+// ej: 120, 580, 900, 1280, 1700, 2300, 2860, 3350, 4320, 4990). 
+
+
+
+Ejecutar:
+use ecommerce
+db.products.insert([
+    {
+        "timestamp":ISODate(),
+        "name":"Escuadra",
+        "description":"Plantilla con forma de triángulo isósceles",
+        "code":"prod-001",
+        "price":1200,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Calculadora",
+        "description":"Herramienta que realiza operaciones matemáticas",
+        "code":"prod-002",
+        "price":3500,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Globo Terráqueo",
+        "description":"Objeto que busca representar al planeta Tierra",
+        "code":"prod-003",
+        "price":2500,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Cuaderno",
+        "description":"Conjunto de hojas de papel para tomar notas",
+        "code":"prod-004",
+        "price":500,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/book-note-paper-school-1024.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Avión de papel",
+        "description":"Simulador de vuelo hecho de papel",
+        "code":"prod-005",
+        "price":100,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/plane-paper-toy-science-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Planilla",
+        "description":"Soporte para tomar notas en papel",
+        "code":"prod-006",
+        "price":1250,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/paper-clip-academic-note-exam-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Lápiz",
+        "description":"Objeto usado para escribir",
+        "code":"prod-007",
+        "price":800,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Microscopio",
+        "description":"Herramienta de alto poder magnificador",
+        "code":"prod-008",
+        "price":4999,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/microscope-lab-science-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Manzana",
+        "description":"Fruta verde redonda",
+        "code":"prod-009",
+        "price":550,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/apple-fruit-science-school-256.png"
+    },
+    {
+        "timestamp":ISODate(),
+        "name":"Pizarra",
+        "description":"Herramienta para hacer clases",
+        "code":"prod-010",
+        "price":4500,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/apple-fruit-science-school-256.png"
+    }
+])
+
+Ejecutar:
+use ecommerce
+db.messages.insert([
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Hola curso!"
+   },
+   {
+      "email":"pedro@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Hola! Como te va?"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Excelente"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Tú como vas?"
+   },
+   {
+      "email":"pedro@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Bien también"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Súper"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Que tema veremos en clase hoy?"
+   },
+   {
+      "email":"pedro@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Mongo DB y SQL"
+   },
+   {
+      "email":"juan@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Excelente!"
+   },
+   {
+      "email":"pedro@hotmail.com",
+      "timestamp": ISODate(),
+      "message":"Nos vemos!"
+   },
+])
+
+// Punto 3: Listar todos los documentos en cada colección.
+
+Ejecutar:
+
+use ecommerce 
+db.products.find().pretty()
+db.messages.find().pretty()
+
+// Punto 4: Mostrar la cantidad de documentos almacenados en cada una de ellas.
+
+Ejecutar:
+
+use ecommerce 
+db.products.count()
+db.messages.count()
+
+// Punto 5: Realizar un CRUD sobre la colección de productos:
+// a) Agregar un producto más en la colección de productos 
+
+Ejecutar:
+
+use ecommerce
+db.products.insertOne(
+    {
+        "timestamp":ISODate(),
+        "name":"Camión",
+        "description":"Juguete para niño en forma de camión",
+        "code":"prod-011",
+        "price":2500,
+        "thumbnail":"https://cdn3.iconfinder.com/data/icons/education-209/64/bus-vehicle-transport-school-256.png"
+    })
+
+// b) Realizar una consulta por nombre de producto específico:
+//     i) Listar los productos con precio menor a 1000 pesos.
+
+Ejecutar:
+
+use ecommerce
+db.products.find({"price": {$lt: 1000}}).pretty()
+
+//    ii) Listar los productos con precio entre los 1000 a 3000 pesos.
+
+use ecommerce
+db.products.find({$and: [{"price": {$gte: 1000}}, {"price": {$lte: 3000}}]}).pretty()
+
+//   iii) Listar los productos con precio mayor a 3000 pesos.
+
+use ecommerce
+db.products.find({"price": {$gt: 3000}}).pretty()
+
+//    iv) Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+
+use ecommerce
+db.products.find({}, {"_id": 0, "name": 1}).sort({"price": 1}).skip(2).limit(1).pretty()
+
+// c) Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100.
+
+use ecommerce
+db.products.updateMany({}, {$set: {"stock": 100}})
+
+// d) Cambiar el stock a cero de los productos con precios mayores a 4000 pesos. 
+
+use ecommerce
+db.products.updateMany({"price": {$gt: 4000}}, {$set: {"stock": 0}})
+
+// e) Borrar los productos con precio menor a 1000 pesos 
+
+use ecommerce
+db.products.deleteMany({"price": {$lt: 1000}})
+
+// Punto 6:Crear un usuario 'pepe' clave: 'asd456' que sólo pueda leer la base de datos ecommerce. 
+// Verificar que pepe no pueda cambiar la información.
+
+// Primero creo un usuario admin
+
+Ejecutar:
+
+use admin
+db.createUser({
+    user: "coderhouse",
+    pwd: "Coderhouse123!",
+    roles: [
+        {
+            role: "userAdminAnyDatabase", db: "admin"
+        },
+        {
+            role: "readWriteAnyDatabase", db: "admin"
+        }
+    ]
+})
+
+// apagar MongoDB 
+
+// agregar a mongod.conf las siguientes lineas de
+
+security:
+  authorization: enabled
+
+setParameter:
+  authenticationMechanisms: SCRAM-SHA-1
+
+// encender MongoDb
+
+// loggearse con el usuario coderhouse
+
+Ejecutar:
+
+use ecommerce
+db.createUser({
+    user: "pepe",
+    pwd: "asd456",
+    roles: [
+        {
+            role: "read", db: "ecommerce"
+        }
+    ]
+})
