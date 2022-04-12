@@ -264,3 +264,6 @@ db.createUser({
         }
     ]
 })
+
+// Comando utilizado para hacer el dump de la BD ecommerce
+mongodump --host localhost --port 27017 --db ecommerce --username=coderhouse --password=Coderhouse123! --authenticationDatabase=admin
