@@ -1,0 +1,13 @@
+.alert-success .btn-warning {
+	float: right;
+}
+
+.alert-success span {
+	line-height: 34px;
+}
+
+.alert-success > div:after {
+	clear: both;
+	content: '';
+	display: table;
+}

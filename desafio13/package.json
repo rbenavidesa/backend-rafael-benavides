@@ -1,0 +1,31 @@
+{
+	"name": "desafio13",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon --inspect ./src/server.js",
+		"init_product_collection": "nodemon --inspect ./src/utils/products.init.util.js",
+		"init_cart_collection": "nodemon --inspect ./src/utils/carts.init.util.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"connect-mongo": "^4.6.0",
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"express-handlebars": "^6.0.5",
+		"express-session": "^1.17.2",
+		"mongoose": "^6.3.3",
+		"passport": "^0.5.2",
+		"passport-local": "^1.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.15.0"
+	}
+}

@@ -1,0 +1,16 @@
+<div class='container' style='width:50%'>
+	<div class='starter-template'>
+		<div class="alert alert-success">
+                    <div>
+                        <span><strong>Bienvenido {{user}}</strong></span>
+						<form action='/logout' method='POST'>
+							<button type='submit' class="btn btn-warning" role="button">Logout</button>
+						</form>
+                    </div>
+                </div>
+		{{>product-form}}
+
+		{{>product-table}}
+
+	</div>
+</div>
