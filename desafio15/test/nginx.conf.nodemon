@@ -1,0 +1,29 @@
+
+events {   
+}
+
+
+http {
+
+    upstream randoms{
+        server 127.0.0.1:8081;
+    }
+
+    upstream general{
+        server 127.0.0.1:8080;
+    }
+
+    server {
+        listen 2000;
+
+        location / {
+            proxy_pass http://general;
+        }
+
+        location /api/randoms {
+            proxy_pass http://randoms;
+        }
+
+        
+    }   
+}

@@ -1,0 +1,54 @@
+// Ejecución con Nodemon
+nodemon --inspect ./src/server.js --PORT=8080 --MODE=CLUSTER
+nodemon --inspect ./src/server.js --PORT=8081 --MODE=FORK
+nodemon --inspect ./src/server.js --PORT=8082 --MODE=FORK
+
+// Ejecución con FOREVER
+forever start --watchDirectory ./src/server.js --PORT=8080 --MODE=CLUSTER
+forever start --watchDirectory ./src/server.js --PORT=8081 --MODE=FORK
+forever start --watchDirectory ./src/server.js --PORT=8082 --MODE=FORK
+// Para revisar listado de procesos
+forever list
+// Para detener todos los procesos
+forever stopall 
+
+// Ejecución PM2
+// Ejecución FORK
+pm2 start ./src/server.js --name="Server1" --watch  -- --PORT=8080 --MODE=FORK
+// Ejecución de un cluster de 4 instancias
+pm2 start ./src/server.js --name="Server2" --watch  -i 4 -- --PORT=8081 --MODE=FORK
+// Ejecución de un cluster usando el paquete cluster
+pm2 start ./src/server.js --name="Server3" --watch -- --PORT=8081 --MODE=CLUSTER
+
+--------------------------------------------------------------------------------------------------------------------------------
+Redirigir todas las consultas a /api/randoms a un cluster de servidores escuchando en el puerto 8081. El cluster será creado desde node utilizando el módulo nativo cluster.
+El resto de las consultas, redirigirlas a un servidor individual escuchando en el puerto 8080.
+Verificar que todo funcione correctamente.
+
+- Para crear el cluster que manejará las peticiones a /api/randoms se debe ejecutar: nodemon ./src/server.js --PORT=8081 --MODE=CLUSTER
+- Para crear el fork que manejará el resto de las peticiones ejecutar: nodemon ./src/server.js --PORT=8080 --MODE=FORK
+- Se debe modificar el archivo nginx.conf en base al archivo nginx.conf.nodemond que se encuentra en la carpeta testing
+- Para revisar que está todo funcionanco como se espera, se debe ejecutar la url http://localhost:2000/api/randoms y comparar
+el pid retornado junto al arreglo de números con respecto al del cluster de procesos.
+- Para revisar que el resto de la rutas llegan al servidor con puerto 8080, se debe ejecutar la url http://localhost:2000/info
+y comparar el pid que se muestra con el del servidor inicializado en el puerto 8080.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Luego, modificar la configuración para que todas las consultas a /api/randoms sean redirigidas a un cluster 
+de servidores gestionado desde nginx, repartiéndolas equitativamente entre 4 instancias escuchando en los puertos 
+8082, 8083, 8084 y 8085 respectivamente.
+
+Primero ejecutar: 
+pm2 start ./src/server.js --name="Server1" --watch  -- --PORT=8080 --MODE=FORK
+pm2 start ./src/server.js --name="Server2" --watch  -- --PORT=8082 --MODE=FORK
+pm2 start ./src/server.js --name="Server3" --watch  -- --PORT=8083 --MODE=FORK
+pm2 start ./src/server.js --name="Server4" --watch  -- --PORT=8084 --MODE=FORK
+pm2 start ./src/server.js --name="Server5" --watch  -- --PORT=8085 --MODE=FORK
+
+- Se debe modificar el archivo nginx.conf en base al archivo nginx.conf.pm2 que se encuentra en la carpeta testing
+- Para revisar que el resto de la rutas llegan al servidor con puerto 8080, se debe ejecutar la url http://localhost:2000/info
+- Para revisar que está todo funcionanco como se espera, se debe ejecutar la url http://localhost:2000/api/randoms y comparar
+el pid retornado junto al arreglo de números con respecto al del cluster de procesos. Al refrescar la página se puede
+ver como cambia el pid retornado entre los pid asociados a cada servidor de distinto puerto.
+
