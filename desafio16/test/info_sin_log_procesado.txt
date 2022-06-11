@@ -1,0 +1,1023 @@
+Statistical profiling result from info_sin_log.log, (7071 ticks, 54 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    195    2.8%          /usr/lib/system/libsystem_pthread.dylib
+    144    2.0%          /usr/lib/system/libsystem_malloc.dylib
+    111    1.6%          /usr/lib/system/libsystem_kernel.dylib
+    111    1.6%          /usr/lib/system/libsystem_c.dylib
+     78    1.1%          /usr/lib/system/libsystem_platform.dylib
+     58    0.8%          /usr/lib/libc++.1.dylib
+      7    0.1%          /usr/lib/system/libdyld.dylib
+      6    0.1%          /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+      5    0.1%          /usr/lib/libc++abi.dylib
+      1    0.0%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     28    0.4%    0.4%  LazyCompile: *wrap /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     26    0.4%    0.4%  LazyCompile: *parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     19    0.3%    0.3%  LazyCompile: *resolve node:path:1091:10
+     14    0.2%    0.2%  LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     12    0.2%    0.2%  LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     11    0.2%    0.2%  LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:177:16
+      8    0.1%    0.1%  LazyCompile: *relative node:path:1190:11
+      8    0.1%    0.1%  LazyCompile: *makeAbs /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:203:18
+      7    0.1%    0.1%  LazyCompile: *SourceNode_walk /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/source-map/lib/source-node.js:221:53
+      6    0.1%    0.1%  LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      6    0.1%    0.1%  LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      6    0.1%    0.1%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      6    0.1%    0.1%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      5    0.1%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      5    0.1%    0.1%  LazyCompile: *deserializeObject /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:65:27
+      5    0.1%    0.1%  LazyCompile: *anonymous /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      5    0.1%    0.1%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/source-map/lib/source-node.js:174:29
+      4    0.1%    0.1%  RegExp: \s+(?![^[]*]|[^<]*>)
+      4    0.1%    0.1%  LazyCompile: *preparePath /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      4    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      4    0.1%    0.1%  LazyCompile: *__classPrivateFieldGet file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:7:80
+      4    0.1%    0.1%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      4    0.1%    0.1%  Function: ^<anonymous> node:internal/util:347:32
+      3    0.0%    0.0%  RegExp: (^|\r?\n)\s*?$
+      3    0.0%    0.0%  LazyCompile: *onwrite node:internal/streams/writable:426:17
+      3    0.0%    0.0%  LazyCompile: *join node:path:1166:7
+      3    0.0%    0.0%  LazyCompile: *argsert file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/argsert.js:4:24
+      3    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:284:16
+      3    0.0%    0.0%  LazyCompile: *SourceNode_add /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/source-map/lib/source-node.js:172:51
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      2    0.0%    0.0%  RegExp: ^(?:\}(~)?\}\})
+      2    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\*?)
+      2    0.0%    0.0%  RegExp: \.*[\][<>]
+      2    0.0%    0.0%  RegExp: [&<>"'`=]
+      2    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      2    0.0%    0.0%  LazyCompile: *replaceStack /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      2    0.0%    0.0%  LazyCompile: *removeListener node:events:693:28
+      2    0.0%    0.0%  LazyCompile: *push /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      2    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.0%    0.0%  LazyCompile: *extend /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      2    0.0%    0.0%  LazyCompile: *emit node:events:474:44
+      2    0.0%    0.0%  LazyCompile: *castChunk /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      2    0.0%    0.0%  Function: ^validation file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/validation.js:6:27
+      2    0.0%    0.0%  Function: ^setKey file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:748:24
+      2    0.0%    0.0%  Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      2    0.0%    0.0%  Function: ^readFileSync node:fs:450:22
+      2    0.0%    0.0%  Function: ^preparePath /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      2    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      2    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      2    0.0%    0.0%  Function: ^hrtime node:internal/process/per_thread:79:16
+      2    0.0%    0.0%  Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      2    0.0%    0.0%  Function: ^deserializeObject /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:65:27
+      2    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:488:20
+      2    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^--?([^=]+)=([\s\S]*)$
+      1    0.0%    0.0%  RegExp: ^(?:false(?=([~}\s)])))
+      1    0.0%    0.0%  RegExp: ^(?:\}\}\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\^)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\/)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?&)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.0%  RegExp: ^(?:\.\.)
+      1    0.0%    0.0%  RegExp: ^(?:\))
+      1    0.0%    0.0%  RegExp: ^(?:[^\x00]+)
+      1    0.0%    0.0%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      1    0.0%    0.0%  RegExp: ^(?:=)
+      1    0.0%    0.0%  RegExp: ^(?:(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      1    0.0%    0.0%  RegExp: \b(node|iojs|electron)(\.exe)?$
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: [A-Z]
+      1    0.0%    0.0%  RegExp: [.:].*
+      1    0.0%    0.0%  RegExp: [&<>"'`=] {1}
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  RegExp: (?:\r\n?|\n).*
+      1    0.0%    0.0%  LazyCompile: *template /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      1    0.0%    0.0%  LazyCompile: *resolvePossibleLambda /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      1    0.0%    0.0%  LazyCompile: *resolvePath /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1    0.0%    0.0%  LazyCompile: *popStack /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      1    0.0%    0.0%  LazyCompile: *parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      1    0.0%    0.0%  LazyCompile: *parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:413:9
+      1    0.0%    0.0%  LazyCompile: *isUint8Array node:internal/util/types:13:22
+      1    0.0%    0.0%  LazyCompile: *id /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:44:12
+      1    0.0%    0.0%  LazyCompile: *go$readFile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/graceful-fs/graceful-fs.js:117:26
+      1    0.0%    0.0%  LazyCompile: *getStatsFromBinding node:internal/fs/utils:530:29
+      1    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      1    0.0%    0.0%  LazyCompile: *createUnsafeBuffer node:internal/buffer:1059:28
+      1    0.0%    0.0%  LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:490:17
+      1    0.0%    0.0%  LazyCompile: *classifySexpr /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:363:40
+      1    0.0%    0.0%  LazyCompile: *appendEscaped /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1    0.0%    0.0%  LazyCompile: *anonymous /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      1    0.0%    0.0%  LazyCompile: *aliasable /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1006:32
+      1    0.0%    0.0%  LazyCompile: *__generator /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:27:58
+      1    0.0%    0.0%  LazyCompile: *WhitespaceControl.Program /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      1    0.0%    0.0%  LazyCompile: *Program /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      1    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      1    0.0%    0.0%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/util:346:24
+      1    0.0%    0.0%  LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      1    0.0%    0.0%  LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1245:13
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    0.0%    0.0%  Function: ^writeHead node:_http_server:267:19
+      1    0.0%    0.0%  Function: ^writeHead /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/on-headers/index.js:28:29
+      1    0.0%    0.0%  Function: ^version file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:923:12
+      1    0.0%    0.0%  Function: ^usage file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/usage.js:7:22
+      1    0.0%    0.0%  Function: ^unenroll node:timers:78:18
+      1    0.0%    0.0%  Function: ^uidSync /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/uid-safe/index.js:75:18
+      1    0.0%    0.0%  Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    0.0%    0.0%  Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.0%  Function: ^subarray node:buffer:1116:46
+      1    0.0%    0.0%  Function: ^spliceOne node:internal/util:394:19
+      1    0.0%    0.0%  Function: ^setopts /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:48:18
+      1    0.0%    0.0%  Function: ^setHeader node:_http_outgoing:574:57
+      1    0.0%    0.0%  Function: ^sent /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:28:39
+      1    0.0%    0.0%  Function: ^resOnFinish node:_http_server:786:21
+      1    0.0%    0.0%  Function: ^relative node:path:1190:11
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2412:22
+      1    0.0%    0.0%  Function: ^query /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/middleware/query.js:39:24
+      1    0.0%    0.0%  Function: ^processIncomingData /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    0.0%    0.0%  Function: ^process.cwd /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/graceful-fs/polyfills.js:8:23
+      1    0.0%    0.0%  Function: ^parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^pad /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/fecha/lib/fecha.umd.js:88:22
+      1    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:426:17
+      1    0.0%    0.0%  Function: ^onwrite /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/readable-stream/lib/_stream_writable.js:444:17
+      1    0.0%    0.0%  Function: ^ondata node:internal/streams/readable:775:18
+      1    0.0%    0.0%  Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      1    0.0%    0.0%  Function: ^onParserExecute node:_http_server:632:25
+      1    0.0%    0.0%  Function: ^onMessage /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1    0.0%    0.0%  Function: ^onFinish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/morgan/node_modules/on-finished/index.js:95:20
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^lookupProperty /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:118:44
+      1    0.0%    0.0%  Function: ^lookup /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/view.js:104:40
+      1    0.0%    0.0%  Function: ^log /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/winston/lib/winston/transports/console.js:44:6
+      1    0.0%    0.0%  Function: ^internalBinding node:internal/bootstrap/loaders:164:45
+      1    0.0%    0.0%  Function: ^initAsyncResource node:internal/timers:157:27
+      1    0.0%    0.0%  Function: ^hb.compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars.js:38:25
+      1    0.0%    0.0%  Function: ^hasListeners /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/send/index.js:1031:23
+      1    0.0%    0.0%  Function: ^guessType file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/argsert.js:51:19
+      1    0.0%    0.0%  Function: ^getUrlToken /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/morgan/index.js:212:42
+      1    0.0%    0.0%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.0%  Function: ^getDefaultTriggerAsyncId node:internal/async_hooks:433:34
+      1    0.0%    0.0%  Function: ^get node:net:1702:6
+      1    0.0%    0.0%  Function: ^first /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/ee-first/index.js:24:15
+      1    0.0%    0.0%  Function: ^extend /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      1    0.0%    0.0%  Function: ^escapeExpression /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      1    0.0%    0.0%  Function: ^enabled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/application.js:438:31
+      1    0.0%    0.0%  Function: ^emitBeforeScript node:internal/async_hooks:510:26
+      1    0.0%    0.0%  Function: ^describe file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/usage.js:110:38
+      1    0.0%    0.0%  Function: ^copy node:buffer:775:16
+      1    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.0%  Function: ^compileChildren /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1    0.0%    0.0%  Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    0.0%    0.0%  Function: ^command file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/command.js:428:24
+      1    0.0%    0.0%  Function: ^arrayClone node:events:883:20
+      1    0.0%    0.0%  Function: ^accept /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1    0.0%    0.0%  Function: ^_write node:internal/streams/writable:284:16
+      1    0.0%    0.0%  Function: ^_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  Function: ^__generator /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:27:58
+      1    0.0%    0.0%  Function: ^__awaiter /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    0.0%    0.0%  Function: ^Writable.write /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/readable-stream/lib/_stream_writable.js:288:37
+      1    0.0%    0.0%  Function: ^TopologyDescription /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/topology_description.js:29:16
+      1    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:769:42
+      1    0.0%    0.0%  Function: ^Session /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/session/session.js:24:17
+      1    0.0%    0.0%  Function: ^PathExpression /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.0%  Function: ^Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      1    0.0%    0.0%  Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    0.0%    0.0%  Function: ^Minimatch /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:163:15
+      1    0.0%    0.0%  Function: ^Glob._processReaddir /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:368:43
+      1    0.0%    0.0%  Function: ^ExpressHandlebars.renderView /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:246:55
+      1    0.0%    0.0%  Function: ^EventEmitter node:events:207:22
+      1    0.0%    0.0%  Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1227:19
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:63:44
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/index.js:220:28
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:366:57
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:249:57
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:164:57
+
+ [C++]:
+   ticks  total  nonlib   name
+   3450   48.8%   54.3%  T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    488    6.9%    7.7%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    426    6.0%    6.7%  T __kernelrpc_mach_port_get_context
+    363    5.1%    5.7%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    187    2.6%    2.9%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+    137    1.9%    2.2%  T _host_request_notification
+     98    1.4%    1.5%  T _host_get_special_port
+     97    1.4%    1.5%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     92    1.3%    1.4%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     62    0.9%    1.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+     56    0.8%    0.9%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     50    0.7%    0.8%  T _mach_msg_destroy
+     46    0.7%    0.7%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     46    0.7%    0.7%  T _mig_strncpy_zerofill
+     30    0.4%    0.5%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.4%    0.4%  T _semaphore_create
+     27    0.4%    0.4%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+     23    0.3%    0.4%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.3%    0.3%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.3%    0.3%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    0.3%    0.3%  T ___thread_selfid
+     19    0.3%    0.3%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      9    0.1%    0.1%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      9    0.1%    0.1%  T _mach_get_times
+      7    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  T node::fs::FSReqBase::~FSReqBase()
+      5    0.1%    0.1%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      5    0.1%    0.1%  T node::InternalCallbackScope::Close()
+      5    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      4    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      4    0.1%    0.1%  T node::fs::FSReqAfterScope::FSReqAfterScope(node::fs::FSReqBase*, uv_fs_s*)
+      3    0.0%    0.0%  t unsigned long std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::__erase_unique<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      3    0.0%    0.0%  T node::Environment::RunWeakRefCleanup()
+      3    0.0%    0.0%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      2    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      2    0.0%    0.0%  T _pthread_cond_broadcast
+      2    0.0%    0.0%  T _kdebug_typefilter
+      1    0.0%    0.0%  t void std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__emplace_back_slow_path<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&)
+      1    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.0%  t std::__1::vector<v8::internal::Handle<v8::internal::Object>, std::__1::allocator<v8::internal::Handle<v8::internal::Object> > >::__append(unsigned long)
+      1    0.0%    0.0%  t std::__1::deque<node::tracing::NodeTraceWriter::WriteRequest, std::__1::allocator<node::tracing::NodeTraceWriter::WriteRequest> >::__add_back_capacity()
+      1    0.0%    0.0%  t std::__1::__shared_ptr_pointer<char*, std::__1::default_delete<char []>, std::__1::allocator<char> >::__on_zero_shared_weak()
+      1    0.0%    0.0%  t std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> >::__rehash(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >::rehash(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<void*, void*>*> std::__1::__hash_table<void*, std::__1::hash<void*>, std::__1::equal_to<void*>, std::__1::allocator<void*> >::find<void*>(void* const&)
+      1    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::fs::FSReqCallback::~FSReqCallback()
+      1    0.0%    0.0%  t node::Environment::allocate_managed_buffer(unsigned long)
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::AsyncHooks::pop_async_context(double)
+      1    0.0%    0.0%  t node::ArrayBufferViewContents<char, 64ul>::Read(v8::Local<v8::ArrayBufferView>)
+      1    0.0%    0.0%  t __pthread_mutex_global_init
+      1    0.0%    0.0%  T node::i18n::ConverterObject::Decode(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::~FSReqAfterScope()
+      1    0.0%    0.0%  T node::fs::AfterScanDir(uv_fs_s*)
+      1    0.0%    0.0%  T node::cares_wrap::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      1    0.0%    0.0%  T node::AsyncWrap::~AsyncWrap()
+      1    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      1    0.0%    0.0%  T _mach_vm_map
+      1    0.0%    0.0%  T _mach_port_guard
+      1    0.0%    0.0%  T __pthread_exit_if_canceled
+
+ [Summary]:
+   ticks  total  nonlib   name
+    404    5.7%    6.4%  JavaScript
+   5897   83.4%   92.8%  C++
+    225    3.2%    3.5%  GC
+    716   10.1%          Shared libraries
+     54    0.8%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   5541   99.0%   78.4%  T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     24    0.4%    0.3%  T _mach_msg_destroy
+     21    0.4%    0.3%  T _semaphore_create
+      2    0.0%    0.0%  T _kdebug_typefilter
+      1    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::GetReqWrap(v8::FunctionCallbackInfo<v8::Value> const&, int, bool)
+      1    0.0%    0.0%  t node::ArrayBufferViewContents<char, 64ul>::Read(v8::Local<v8::ArrayBufferView>)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _mach_vm_map
+      1    0.0%    0.0%  T _mach_port_guard
+      1    0.0%    0.0%  T _host_get_special_port
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3450   48.8%  T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+   2029   58.8%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    266   13.1%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+    179   67.3%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+    179  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+    179  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     87   32.7%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     87  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     87  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+    166    8.2%      LazyCompile: ~inspectorWaitForDebugger node:inspector:181:34
+    166  100.0%        LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90945
+    166  100.0%          LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90236
+    166  100.0%            LazyCompile: ~7207 /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:89176
+    137    6.8%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      8    5.8%        LazyCompile: *parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      5   62.5%          Function: ^yargsParser.detailed file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/index.js:54:33
+      5  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      3   37.5%          LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      3  100.0%            Function: ^parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:683:10
+      7    5.1%        LazyCompile: *argsert file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/argsert.js:4:24
+      3   42.9%          Function: ^addHelpOpt file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:127:15
+      3  100.0%            Function: ^help file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:141:9
+      2   28.6%          Function: ^boolean file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:168:12
+      1   50.0%            Function: ^version file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:923:12
+      1   50.0%            Function: ^addHelpOpt file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:127:15
+      1   14.3%          Function: ^locale file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:545:11
+      1  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1058:19
+      1   14.3%          Function: ^describe file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:379:13
+      1  100.0%            Function: ^version file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:923:12
+      7    5.1%        Function: ^format /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/fecha/lib/fecha.umd.js:246:25
+      7  100.0%          Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/logform/timestamp.js:14:25
+      7  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/logform/combine.js:17:10
+      7    5.1%        Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      7  100.0%          Function: ^parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:683:10
+      7  100.0%            Function: ^get file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      6    4.4%        LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      5    3.6%        LazyCompile: *YargsInstance file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      5  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      5  100.0%            Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      5    3.6%        Function: ^parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      5  100.0%          Function: ^yargsParser.detailed file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/index.js:54:33
+      5  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      5    3.6%        Function: ^escapeExpression /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      5  100.0%          Function: ~<anonymous> :1:20
+      5  100.0%            Function: ^main /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:207:18
+      5    3.6%        Function: ^YargsInstance file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      5  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      5  100.0%            Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      4    2.9%        Function: ^step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:23:22
+      4  100.0%          Function: ^fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      4    2.9%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      4  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      4  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3    2.2%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      3  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      3  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      3    2.2%        Function: ^__awaiter /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      2   66.7%          Function: ^ExpressHandlebars.getTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      1   50.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1   50.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      1   33.3%          Function: ^ExpressHandlebars.renderView /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:246:55
+      1  100.0%            Function: ^render /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/view.js:133:40
+      3    2.2%        Function: ^<anonymous> node:internal/util:347:32
+      3  100.0%          Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/graceful-fs/graceful-fs.js:118:50
+      3  100.0%            Function: ^readFileAfterClose node:internal/fs/read_file_context:46:28
+      3    2.2%        Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:98:47
+      3  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      3  100.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      3    2.2%        Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      3  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2   66.7%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1   33.3%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      2    1.5%        T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2    1.5%        LazyCompile: *parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:413:9
+      2  100.0%          T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/minimatch/minimatch.js:222:19
+      2    1.5%        LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%            LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2    1.5%        LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      2  100.0%          Function: ^parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:683:10
+      2  100.0%            Function: ^get file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      2    1.5%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2  100.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      2    1.5%        Function: ^pipe /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/send/index.js:506:43
+      2  100.0%          Function: ^serveStatic /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/serve-static/index.js:72:31
+      1   50.0%            LazyCompile: *trim_prefix /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:293:23
+      1   50.0%            LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      2    1.5%        Function: ^databaseNamespace /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/utils.js:429:27
+      2  100.0%          Function: ^Msg /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/commands.js:468:16
+      2  100.0%            Function: ^command /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:247:12
+      2    1.5%        Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1   50.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1   50.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+     83    4.1%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     53   63.9%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     53  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+     53  100.0%            Function: ^Socket._write node:net:806:35
+     30   36.1%        LazyCompile: *_write node:internal/streams/writable:284:16
+     30  100.0%          Function: ^Writable.write node:internal/streams/writable:334:36
+     21   70.0%            Function: ^logRequest /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/morgan/index.js:116:25
+      9   30.0%            Function: ^log /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/winston/lib/winston/transports/console.js:44:6
+     65    3.2%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+     64   98.5%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     64  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     64  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.5%        LazyCompile: ~compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     55    2.7%      Function: ^cpus node:os:133:14
+     53   96.4%        Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+     46   86.8%          Function: ^handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+     44   95.7%            Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+      2    4.3%            LazyCompile: ~next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+      7   13.2%          LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      7  100.0%            Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+      2    3.6%        LazyCompile: ~getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      2  100.0%          Function: ^handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            LazyCompile: ~next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+     53    2.6%      LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+     53  100.0%        LazyCompile: ~createSecureContext node:_tls_common:99:29
+     53  100.0%          LazyCompile: ~connect node:_tls_wrap:1597:35
+     53  100.0%            LazyCompile: ~makeConnection /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:241:24
+     45    2.2%      LazyCompile: ~spawnSync node:internal/child_process:1094:19
+     45  100.0%        LazyCompile: ~spawnSync node:child_process:770:19
+     45  100.0%          LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90945
+     45  100.0%            LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90236
+     42    2.1%      Function: ^memoryUsage node:internal/process/per_thread:168:23
+     42  100.0%        Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+     27   64.3%          LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+     27  100.0%            Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+     15   35.7%          Function: ^handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+     15  100.0%            Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+     39    1.9%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     39  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+     39  100.0%          Function: ^Socket._writev node:net:801:36
+     39  100.0%            Function: ^doWrite node:internal/streams/writable:399:17
+     36    1.8%      LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     35   97.2%        LazyCompile: *parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     21   60.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     21  100.0%            LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     14   40.0%          Function: ^parseWithoutProcessing /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+     14  100.0%            Function: ^parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      1    2.8%        Function: ^lex /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1  100.0%          Function: ^lex /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1  100.0%            Function: ^parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     25    1.2%      Function: ^initialize /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/passport/lib/middleware/initialize.js:51:29
+     14   56.0%        LazyCompile: *trim_prefix /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:293:23
+     14  100.0%          LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:177:16
+     14  100.0%            Function: ^error /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/serve-static/index.js:115:39
+      6   24.0%        Function: ^handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      6  100.0%          Function: ^trim_prefix /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:293:23
+      4   66.7%            LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:177:16
+      2   33.3%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:280:64
+      5   20.0%        LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      5  100.0%          Function: ^trim_prefix /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:293:23
+      5  100.0%            LazyCompile: *next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:177:16
+
+    488    6.9%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    488  100.0%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    475   97.3%      Function: ^compileFunction node:vm:308:25
+    464   97.7%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+    462   99.6%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+    448   97.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     14    3.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     11    2.3%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+     11  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+     11  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     13    2.7%      LazyCompile: ~compileFunction node:vm:308:25
+     13  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+     13  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+     13  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+
+    426    6.0%  T __kernelrpc_mach_port_get_context
+
+    363    5.1%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+    362   99.7%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    329   90.9%      Function: ^openSync node:fs:576:18
+    327   99.4%        Function: ^readFileSync node:fs:450:22
+    172   52.6%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    172  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+    139   42.5%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1082:13
+    139  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1068:20
+     10    3.1%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      5   50.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
+      5   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      4    1.2%          LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1156:39
+      4  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+     30    8.3%      Function: ^readFile node:fs:373:18
+     30  100.0%        Function: ^go$readFile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/graceful-fs/graceful-fs.js:117:26
+     30  100.0%          Function: ^readFile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/graceful-fs/graceful-fs.js:111:21
+     27   90.0%            Function: ^<anonymous> node:internal/util:346:24
+      3   10.0%            LazyCompile: *<anonymous> node:internal/util:346:24
+
+    195    2.8%  /usr/lib/system/libsystem_pthread.dylib
+    193   99.0%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    104   53.9%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     72   69.2%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     72  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     72  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     32   30.8%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     32  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     32  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     19    9.8%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+     19  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     19  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     19  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      4    2.1%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1   25.0%        LazyCompile: ~looksLikeNumber file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/string-utils.js:52:32
+      1  100.0%          LazyCompile: ~maybeCoerceNumber file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:587:35
+      1  100.0%            LazyCompile: ~processValue file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:561:30
+      1   25.0%        LazyCompile: ~cascade /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/logform/combine.js:12:17
+      1  100.0%          LazyCompile: ~module.exports /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/logform/combine.js:54:18
+      1  100.0%            Script: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/utils/logger.util.js:1:1
+      1   25.0%        LazyCompile: ~MongoStore /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%          LazyCompile: ~create /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%            Script: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/server.js:1:1
+      1   25.0%        Function: ^makeAbs /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:203:18
+      1  100.0%          Function: ^Glob._makeAbs /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:255:36
+      1  100.0%            Function: ^Glob._process /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:295:36
+      4    2.1%      LazyCompile: ~value node:internal/console/constructor:321:20
+      4  100.0%        LazyCompile: ~log node:internal/console/constructor:359:6
+      4  100.0%          T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      4  100.0%            LazyCompile: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/server.js:103:34
+      3    1.6%      LazyCompile: ~realpathSync node:fs:2412:22
+      3  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    1.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      2    1.0%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:138:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:25:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    1.0%      LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      2  100.0%        LazyCompile: ~makeConnection /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:241:24
+      2  100.0%          LazyCompile: ~connect /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:30:17
+      2  100.0%            LazyCompile: ~checkServer /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/monitor.js:139:21
+      2    1.0%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:85:28
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:25:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    1.0%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      2  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      2  100.0%          Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/debug/src/node.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      2    1.0%      LazyCompile: ~alphasort /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:19:20
+      2  100.0%        T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2  100.0%          LazyCompile: ~finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:122:17
+      2  100.0%            LazyCompile: ~Glob._finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:185:35
+      2    1.0%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      2  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      2    1.0%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+
+    187    2.6%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+    187  100.0%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+    179   95.7%      Function: ^readdirSync node:fs:1385:21
+    178   99.4%        Function: ^default file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/escalade/sync/index.mjs:4:25
+    178  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1082:13
+    178  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1068:20
+      7    3.7%      Function: ^readdir node:fs:1355:17
+      6   85.7%        Function: ^Glob._readdir /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:525:36
+      5   83.3%          Function: ^Glob._readdirInGlobStar /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:492:46
+      5  100.0%            Function: ^Glob._readdir /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:525:36
+      1   16.7%          Function: ^Glob._processGlobStar /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:623:44
+      1  100.0%            Function: ^Glob._process /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:295:36
+      1   14.3%        LazyCompile: *Glob._process /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:295:36
+      1  100.0%          Function: ^Glob /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:117:15
+      1  100.0%            Function: ^glob /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:62:15
+
+    144    2.0%  /usr/lib/system/libsystem_malloc.dylib
+    107   74.3%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     52   48.6%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     39   75.0%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     39  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     39  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     13   25.0%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     13  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     13  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     11   10.3%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2   18.2%        LazyCompile: *__awaiter /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1   50.0%          Function: ^ExpressHandlebars.renderView /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:246:55
+      1  100.0%            Function: ^render /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/view.js:133:40
+      1   50.0%          Function: ^ExpressHandlebars.getTemplates /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:196:57
+      1  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:107:67
+      1    9.1%        LazyCompile: *YargsInstance file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1  100.0%            Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      1    9.1%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    9.1%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    9.1%        Function: ^realpathSync node:fs:2412:22
+      1  100.0%          Function: ^finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:928:23
+      1    9.1%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    9.1%        Function: ^hasServer /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/topology_description.js:237:14
+      1  100.0%          Function: ^serverUpdateHandler /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/topology.js:372:24
+      1  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/topology.js:535:53
+      1    9.1%        Function: ^fn node:internal/util:345:14
+      1  100.0%          Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%            LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    9.1%        Function: ^YargsInstance file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:76:16
+      1  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:27:12
+      1  100.0%            Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      1    9.1%        Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:815:35
+      1  100.0%          LazyCompile: *parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      1  100.0%            LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      8    7.5%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      8  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      8  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      8  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      3    2.8%      LazyCompile: *realpathSync node:fs:2412:22
+      3  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2   66.7%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   33.3%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      3    2.8%      Function: ^inflight /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/inflight/inflight.js:7:19
+      3  100.0%        Function: ^wrapper /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/wrappy/wrappy.js:19:19
+      3  100.0%          Function: ^Glob._readdir /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:525:36
+      2   66.7%            Function: ^Glob._processReaddir /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:368:43
+      1   33.3%            Function: ^Glob._processGlobStar /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:623:44
+      6    4.2%    LazyCompile: *cpus node:os:133:14
+      6  100.0%      Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      6  100.0%        LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      6  100.0%          Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+      6  100.0%            Function: ^dispatch /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:98:45
+
+    137    1.9%  T _host_request_notification
+    116   84.7%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     56   48.3%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     34   60.7%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     34  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     34  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     22   39.3%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     22  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     22  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     13   11.2%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+     13  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     13  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     13  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      6    5.2%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1   16.7%        LazyCompile: ~match /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            LazyCompile: ~next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/index.js:177:16
+      1   16.7%        LazyCompile: ~makeConnection /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:241:24
+      1  100.0%          LazyCompile: ~connect /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%            LazyCompile: ~checkServer /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/monitor.js:139:21
+      1   16.7%        LazyCompile: ~getset /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/color/index.js:431:16
+      1  100.0%          Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/color/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1   16.7%        LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1   16.7%        Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/parse-command.js:13:26
+      1  100.0%          T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%            LazyCompile: ~parseCommand file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/parse-command.js:1:29
+      2    1.7%      LazyCompile: ~write /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:513:15
+      2  100.0%        LazyCompile: ~command /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:247:12
+      1   50.0%          LazyCompile: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/sdam/server.js:193:42
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:265:23
+      1   50.0%          LazyCompile: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%            LazyCompile: ~prepareHandshakeDocument /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connect.js:139:34
+
+    111    1.6%  /usr/lib/system/libsystem_kernel.dylib
+     70   63.1%    LazyCompile: *cpus node:os:133:14
+     70  100.0%      Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+     70  100.0%        LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+     70  100.0%          Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+     70  100.0%            Function: ^dispatch /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:98:45
+     16   14.4%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      8   50.0%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      5   62.5%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      5  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      5  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      3   37.5%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      3  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      3  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      1    6.3%      LazyCompile: ~setupParams /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      1  100.0%        Function: ^setupHelperArgs /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1104:44
+      1  100.0%          Function: ^setupHelper /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1020:36
+      1  100.0%            Function: ^invokeAmbiguous /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1    6.3%      LazyCompile: ~alphasort /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:19:20
+      1  100.0%        T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%          LazyCompile: ~finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:122:17
+      1  100.0%            LazyCompile: ~Glob._finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:185:35
+      1    6.3%      LazyCompile: ~YYYY /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/fecha/lib/fecha.umd.js:121:22
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/fecha/lib/fecha.umd.js:265:43
+      1  100.0%          T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%            LazyCompile: ~format /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/fecha/lib/fecha.umd.js:246:25
+      1    6.3%      LazyCompile: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1203:18
+      1  100.0%        LazyCompile: ~nonOptionCount file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/validation.js:10:50
+      1  100.0%          LazyCompile: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1461:16
+      1  100.0%            LazyCompile: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1176:39
+      1    6.3%      LazyCompile: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/winston/lib/winston/create-logger.js:53:45
+      1  100.0%        T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%          LazyCompile: ~module.exports /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/winston/lib/winston/create-logger.js:25:27
+      1  100.0%            Script: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/utils/logger.util.js:1:1
+      1    6.3%      Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongoose/lib/query.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    6.3%      Function: ^set maxAge /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%        Function: ^resetMaxAge /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/session/session.js:58:68
+      1  100.0%          Function: ^touch /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/session/session.js:47:56
+      1  100.0%            Function: ^end /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/index.js:250:27
+      1    6.3%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+
+    111    1.6%  /usr/lib/system/libsystem_c.dylib
+    108   97.3%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     66   61.1%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     45   68.2%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     45  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     45  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     21   31.8%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     21  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+     21  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     10    9.3%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+     10  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     10  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     10  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      4    3.7%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1   25.0%        LazyCompile: ~set pathname node:internal/url:932:15
+      1  100.0%          T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%            LazyCompile: ~pathToFileURL node:internal/url:1517:23
+      1   25.0%        LazyCompile: ~parseOpts /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1   25.0%        LazyCompile: ~containsForbiddenHostCodePointExcludingPercent /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/whatwg-url/lib/url-state-machine.js:59:56
+      1  100.0%          LazyCompile: ~parseOpaqueHost /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/whatwg-url/lib/url-state-machine.js:379:25
+      1  100.0%            LazyCompile: ~parseHost /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/whatwg-url/lib/url-state-machine.js:328:19
+      1   25.0%        LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      2    1.9%      LazyCompile: ~compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%        LazyCompile: ~compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      2  100.0%          LazyCompile: ~ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      2  100.0%            LazyCompile: ~ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+
+     98    1.4%  T _host_get_special_port
+     58   59.2%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     20   34.5%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     18   90.0%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     18  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     18  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      2   10.0%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      2  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      2  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+     18   31.0%      LazyCompile: ~wrapfunction /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/depd/index.js:413:23
+     18  100.0%        Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/send/index.js:1:1
+     18  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     18  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     16   27.6%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+     16  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     16  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+     16  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.7%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1  100.0%        LazyCompile: ~containsNamespace /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/depd/index.js:29:28
+      1  100.0%          LazyCompile: ~istraced /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/depd/index.js:169:19
+      1  100.0%            LazyCompile: ~depd /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/depd/index.js:103:15
+      1    1.7%      LazyCompile: ~encodeRealpathResult node:fs:2375:30
+      1  100.0%        Function: ^realpathSync node:fs:2412:22
+      1  100.0%          Function: ^finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:928:23
+      1    1.7%      LazyCompile: ~emitStatistics node:internal/http:36:24
+      1  100.0%        Function: ^_finish node:_http_server:203:52
+      1  100.0%          Function: ^end node:_http_outgoing:833:45
+      1  100.0%            Function: ^end /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-session/index.js:250:27
+      1    1.7%      LazyCompile: ~<anonymous> node:internal/validators:236:42
+      1  100.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1    1.0%    LazyCompile: *read node:internal/fs/read_file_context:85:7
+      1  100.0%      Function: ^readFileAfterStat node:fs:326:27
+
+     97    1.4%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     97  100.0%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     68   70.1%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     52   76.5%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      8   15.4%          Function: ~<anonymous> node:crypto:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   13.5%          Function: ~<anonymous> node:https:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6   11.5%          Function: ~<anonymous> node:internal/child_process:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    7.7%          Function: ~<anonymous> node:tls:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.8%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      3  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      3    5.8%          Function: ~<anonymous> node:assert:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:tty:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.8%          Function: ~<anonymous> node:_http_server:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          LazyCompile: ~lazyWebCrypto node:crypto:127:23
+      1  100.0%            LazyCompile: ~get node:crypto:292:8
+      1    1.9%          LazyCompile: ~lazyLoadStreams node:fs:2845:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2988:17
+      1    1.9%          LazyCompile: ~get node:dns:349:8
+      1  100.0%            T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1    1.9%          LazyCompile: ~get BlockList node:net:1775:16
+      1  100.0%            T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1    1.9%          Function: ~<anonymous> node:worker_threads:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:module:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/tls/secure-context:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:internal/cluster/round_robin_handle:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:inspector:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.9%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9   13.2%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      9  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      6   66.7%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3   33.3%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:252:58
+      7   10.3%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      4   57.1%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      4  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      3   42.9%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      3  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+     29   29.9%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     29  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      7   24.1%          Function: ~<anonymous> node:internal/webstreams/adapters:1:1
+      7  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4   13.8%          Function: ~<anonymous> node:internal/webstreams/readablestream:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4   13.8%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3   10.3%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:453:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:25:36
+      3   10.3%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+
+     92    1.3%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     92  100.0%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     90   97.8%      Function: ^read node:internal/modules/package_json_reader:16:14
+     84   93.3%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     74   88.1%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     74  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     10   11.9%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      6   60.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      4   40.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      6    6.7%        Function: ^getPackageConfig node:internal/modules/esm/resolve:168:26
+      5   83.3%          Function: ^packageResolve node:internal/modules/esm/resolve:840:24
+      5  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:928:23
+      1   16.7%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:840:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:928:23
+      2    2.2%      LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      2  100.0%        LazyCompile: ~getPackageConfig node:internal/modules/esm/resolve:168:26
+      2  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:840:24
+      2  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:928:23
+
+     78    1.1%  /usr/lib/system/libsystem_platform.dylib
+     68   87.2%    T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+     30   44.1%      LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     21   70.0%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     21  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     21  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      9   30.0%        Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      9  100.0%          Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      9  100.0%            Function: ^ExpressHandlebars._renderTemplate /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      9   13.2%      T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2   22.2%        LazyCompile: *parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      2  100.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%            LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2   22.2%        LazyCompile: *argsert file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/argsert.js:4:24
+      1   50.0%          Function: ^boolean file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:168:12
+      1  100.0%            Function: ^addHelpOpt file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:127:15
+      1   50.0%          Function: ^addHelpOpt file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:127:15
+      1  100.0%            Function: ^help file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:141:9
+      1   11.1%        LazyCompile: *appendEscaped /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1  100.0%          LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1   11.1%        LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%          LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            LazyCompile: *fulfilled /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1   11.1%        Function: ^setArg file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:503:24
+      1  100.0%          LazyCompile: *parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/yargs-parser.js:14:10
+      1  100.0%            LazyCompile: *<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      1   11.1%        Function: ^normalize node:path:1127:12
+      1  100.0%          Function: ^join node:path:1166:7
+      1  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:208:81
+      1   11.1%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      7   10.3%      Function: ^createFunctionContext /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      7  100.0%        Function: ^compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      7  100.0%          Function: ^compileInput /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      7  100.0%            Function: ^ret /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      2    2.9%      LazyCompile: ~alphasort /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:19:20
+      2  100.0%        T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      2  100.0%          LazyCompile: ~finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/common.js:122:17
+      2  100.0%            LazyCompile: ~Glob._finish /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/node_modules/glob/glob.js:185:35
+      2    2.9%      Function: ^internalNameLookup /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:66:50
+      2  100.0%        Function: ^nameLookup /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:29:34
+      2  100.0%          Function: ^setupHelper /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1020:36
+      2  100.0%            Function: ^invokeAmbiguous /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1    1.5%      LazyCompile: ~yargsParser.detailed file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs-parser/build/lib/index.js:54:33
+      1  100.0%        LazyCompile: ~<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1317:40
+      1  100.0%          LazyCompile: ~parse file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:683:10
+      1  100.0%            LazyCompile: ~get file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:30:18
+      1    1.5%      LazyCompile: ~spawnSync node:child_process:770:19
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90945
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:90236
+      1  100.0%            LazyCompile: ~7207 /Users/rafa/Library/Application Support/Code/User/workspaceStorage/2009c2bcbf1eca6b42289dcd2879006e/ms-vscode.js-debug/bootloader.js:2:89176
+      1    1.5%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:25:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.5%      LazyCompile: ~deserialize /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          LazyCompile: ~parse /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1  100.0%            LazyCompile: ~onMessage /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/connection.js:152:14
+      1    1.5%      LazyCompile: ~ObjectId /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/objectid.js:24:22
+      1  100.0%        Function: ^deserializeObject /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserializeObject /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserialize /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/bson/lib/parser/deserializer.js:36:21
+      1    1.5%      LazyCompile: *resolve node:path:1091:10
+      1  100.0%        Function: ^default file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/escalade/sync/index.mjs:4:25
+      1  100.0%          Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1082:13
+      1  100.0%            Function: ^<anonymous> file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/yargs/build/lib/yargs-factory.js:1068:20
+      1    1.5%      LazyCompile: *realpathSync node:fs:2412:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    1.5%      LazyCompile: *dirname node:path:1275:10
+      1  100.0%        Function: ^lookup /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/view.js:104:40
+      1  100.0%          Function: ^View /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/view.js:52:14
+      1  100.0%            Function: ^render /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/application.js:548:29
+      1    1.5%      LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%        LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1  100.0%            T node::HandleEnvOptions(std::__1::shared_ptr<node::EnvironmentOptions>)
+      1    1.5%      Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:_http_server:1:1
+      1    1.5%      Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/debug/src/debug.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
+      1    1.5%      Function: ~<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/async/eachOfLimit.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    1.5%      Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      1    1.5%      Function: ^functionCall /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:113:38
+      1  100.0%        Function: ^invokeAmbiguous /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:699:44
+      1  100.0%          LazyCompile: *compile /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1    1.5%      Function: ^_copyActual node:buffer:243:21
+      1  100.0%        Function: ^concat node:buffer:536:32
+      1  100.0%          Function: ^read /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/utils.js:876:9
+      1  100.0%            Function: ^processIncomingData /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    1.5%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    1.5%      Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:331:47
+      1  100.0%        LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    1.5%      Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%        LazyCompile: *step /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^<anonymous> /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    1.3%    LazyCompile: *slice node:buffer:594:12
+      1  100.0%      LazyCompile: *toString node:buffer:783:46
+      1  100.0%        Function: ^readFileAfterClose node:internal/fs/read_file_context:46:28
+      1    1.3%    LazyCompile: *cpus node:os:133:14
+      1  100.0%      Function: ^getInfo file:///Users/rafa/Google%20Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/src/controllers/auth.controller.js:63:24
+      1  100.0%        LazyCompile: *handle /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:116:16
+      1  100.0%            Function: ^dispatch /Users/rafa/Google Drive/CoderHouse/BackEnd/backend-rafael-benavides/desafio16/node_modules/express/lib/router/route.js:98:45
+
