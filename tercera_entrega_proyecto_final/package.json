@@ -1,0 +1,46 @@
+{
+	"name": "tercera_entrega_proyecto_final",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/server.js",
+	"type": "module",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node ./src/server.js",
+		"dev": "nodemon ./src/server.js",
+		"server": "nodemon --inspect ./src/server.js --PORT=8080",
+		"server2": "node ./src/server.js --PORT=8080",
+		"email": "node ./src/utils/email.js",
+		"twilio": "node ./src/utils/twilio.util.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"autocannon": "^7.9.0",
+		"bcrypt": "^5.0.1",
+		"cannon": "^0.6.2",
+		"compression": "^1.7.4",
+		"connect-mongo": "^4.6.0",
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"express-fileupload": "^1.4.0",
+		"express-handlebars": "^6.0.6",
+		"express-session": "^1.17.3",
+		"mongoose": "^6.4.0",
+		"morgan": "^1.10.0",
+		"nodemailer": "^6.7.5",
+		"passport": "^0.6.0",
+		"passport-local": "^1.0.0",
+		"twilio": "^3.77.3",
+		"winston": "^3.7.2",
+		"yargs": "^17.5.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.18.0"
+	}
+}

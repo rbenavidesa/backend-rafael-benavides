@@ -1,0 +1,63 @@
+{{#if products}}
+	<table class='table table-dark'>
+		<thead>
+			<tr>
+
+				<th scope='col'>Nombre</th>
+				<th scope='col'>Precio</th>
+				<th scope='col'>Foto</th>
+				<th scope='col'>Acción</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each products}}
+				<tr id='{{this.code}}'>
+					<td>{{this.name}}</td>
+					<td>{{this.price}}</td>
+					<td><img src='{{this.thumbnail}}' class='img-thumbnail' style='width:50px' alt='Imagen no encontrada' /></td>
+					<td><button type='button' class='btn btn-primary btn-sm addButton'>Agregar</button></td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+{{else}}
+	<div class='alert alert-warning' role='alert'>
+		No se encontraron productos
+	</div>
+{{/if}}
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+
+<script>
+ 
+	function post(path, productCode, method='post') {
+
+		const form = document.createElement('form');
+		form.method = method;
+		form.action = path;
+		
+		const hiddenField = document.createElement('input');
+		hiddenField.type = 'hidden';
+		hiddenField.name = 'code';
+		hiddenField.value = productCode;
+		form.appendChild(hiddenField);
+		
+		document.body.appendChild(form);
+		form.submit();
+	}
+
+	$('#signup-form').submit(function (event) { 
+		const phoneNumber = phoneInput.getNumber(); $('#phoneNumber').val(phoneNumber); 
+	}); 
+	
+	$(".addButton").click(function(e){ 
+		e.preventDefault(); 
+		var productCode = $( this).closest('tr').attr('id');
+
+		var getUrl = window.location;
+		var baseUrl = getUrl .protocol + "//" + getUrl.host + "/";
+		post(baseUrl + 'api/carts/addProduct', productCode);
+		
+	});
+
+</script>
