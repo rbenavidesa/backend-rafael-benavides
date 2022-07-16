@@ -1,0 +1,11 @@
+<div class='alert alert-success'>
+	<div>
+		<span><strong>Bienvenido {{userEmail}}</strong></span>
+		<div class='profile-header-img'>
+			<img class='img-thumbnail' src='{{profilePictureUrl}}' />
+		</div>
+		<form action='/logout' method='POST'>
+			<button type='submit' class='btn btn-warning' role='button'>Logout</button>
+		</form>
+	</div>
+</div>
