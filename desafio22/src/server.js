@@ -24,6 +24,7 @@ import ProductsDaoFactory from './services/DAOs/products/ProductsFactory.DAO.js'
 const PORT = process.env.PORT || 3000;
 const numCPUs = os.cpus().length;
 const MODE = process.env.MODE || 'FORK';
+const ENV = process.env.ENV || 'DEV';
 
 if (MODE === 'CLUSTER' && cluster.isMaster) {
 	logger.log('info', `Master ${process.pid} is running`);
@@ -90,88 +91,88 @@ if (MODE === 'CLUSTER' && cluster.isMaster) {
 	/* -------------------------------------------------------------------------- */
 	/*                              Acá parte graphql                             */
 	/* -------------------------------------------------------------------------- */
+	if (ENV === 'DEV') {
+		const schema = buildSchema(`
+			type Product {
+			_id: ID!
+			name: String
+			description: String
+			code: String
+			price: Int
+			thumbnail: String
+			}
+			input ProductsInput {
+			name: String!
+			description: String!
+			code: String!
+			price: Int! 
+			thumbnail: String!
+			}
+			input ProductsEditInput {
+				name: String
+				description: String
+				code: String
+				price: Int 
+				thumbnail: String
+			}
+			input FilterInput {
+			price: Int
+			}
+			type Query {
+			getProduct(_id:ID!):Product
+			getProducts:[Product]
+			}
+			type Mutation {
+			addProduct(data: ProductsInput): Product
+			editProduct(_id:ID!, data:ProductsEditInput!):Product
+			deleteProduct(_id:ID!):Product
+			}
+		`);
 
-	const schema = buildSchema(`
-type Product {
-  _id: ID!
-  name: String
-  description: String
-  code: String
-  price: Int
-  thumbnail: String
-}
-input ProductsInput {
-  name: String!
-  description: String!
-  code: String!
-  price: Int! 
-  thumbnail: String!
-}
-input ProductsEditInput {
-	name: String
-	description: String
-	code: String
-	price: Int 
-	thumbnail: String
-}
-input FilterInput {
-  price: Int
-}
-type Query {
-  getProduct(_id:ID!):Product
-  getProducts:[Product]
-}
-type Mutation {
-  addProduct(data: ProductsInput): Product
-  editProduct(_id:ID!, data:ProductsEditInput!):Product
-  deleteProduct(_id:ID!):Product
-}
-`);
+		const productsDao = ProductsDaoFactory.getDao();
 
-	const productsDao = ProductsDaoFactory.getDao();
+		async function addProduct({ data }) {
+			let product = await productsDao.createProduct(data);
+			return product;
+		}
 
-	async function addProduct({ data }) {
-		let product = await productsDao.createProduct(data);
-		return product;
+		async function getProduct({ _id }) {
+			let product = await productsDao.getProductById(_id);
+			return product;
+		}
+
+		async function editProduct({ _id, data }) {
+			let updateOutcome = await productsDao.updateProduct(_id, data);
+			let product = await productsDao.getProductById(_id);
+			return product;
+		}
+
+		async function deleteProduct({ _id }) {
+			let product = await productsDao.getProductById(_id);
+			let deleteOutcome = await productsDao.deleteProductById(_id);
+			return product;
+		}
+
+		async function getProducts() {
+			let products = await productsDao.getAllProducts();
+			return products;
+		}
+
+		app.use(
+			'/graphql',
+			graphqlHTTP({
+				schema,
+				rootValue: {
+					addProduct,
+					getProduct,
+					editProduct,
+					deleteProduct,
+					getProducts,
+				},
+				graphiql: true,
+			})
+		);
 	}
-
-	async function getProduct({ _id }) {
-		let product = await productsDao.getProductById(_id);
-		return product;
-	}
-
-	async function editProduct({ _id, data }) {
-		let updateOutcome = await productsDao.updateProduct(_id, data);
-		let product = await productsDao.getProductById(_id);
-		return product;
-	}
-
-	async function deleteProduct({ _id }) {
-		let product = await productsDao.getProductById(_id);
-		let deleteOutcome = await productsDao.deleteProductById(_id);
-		return product;
-	}
-
-	async function getProducts() {
-		let products = await productsDao.getAllProducts();
-		return products;
-	}
-
-	app.use(
-		'/graphql',
-		graphqlHTTP({
-			schema,
-			rootValue: {
-				addProduct,
-				getProduct,
-				editProduct,
-				deleteProduct,
-				getProducts,
-			},
-			graphiql: true,
-		})
-	);
-
 	/* -------------------------------------------------------------------------- */
 	/*                              Acá termina graphql                             */
 	/* -------------------------------------------------------------------------- */
