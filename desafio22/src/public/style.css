@@ -1,0 +1,29 @@
+.alert-success .btn-warning {
+	float: right;
+}
+
+.alert-success span {
+	line-height: 34px;
+}
+
+.alert-success > div:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.intl-tel-input {
+	display: table-cell;
+}
+.intl-tel-input .selected-flag {
+	z-index: 4;
+}
+.intl-tel-input .country-list {
+	z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 0;
+}
