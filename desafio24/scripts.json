@@ -1,0 +1,13 @@
+{
+	"$schema": "https://deno.land/x/denon@2.5.0/schema.json",
+	"scripts": {
+		"servest": {
+			"cmd": "deno run --allow-net servest.ts",
+			"desc": "Running server"
+		},
+		"react": {
+			"cmd": "deno run --allow-net react.tsx",
+			"desc": "Running server"
+		}
+	}
+}
