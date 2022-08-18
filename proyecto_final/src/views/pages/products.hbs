@@ -1,0 +1,19 @@
+<div class='container' style='width:50%'>
+	<div class='starter-template'>
+		
+		{{>header}}
+
+		{{>navbar}}
+
+		{{#if addedProduct}}
+			<div class='alert alert-info' role='alert'>
+				El producto se agregó al carrito exitosamente
+			</div>
+		{{/if}}
+
+		<h2 class='text-primary'>Selecciona los productos que deseas agregar a tu carro</h2>
+
+		{{>product-table}}
+
+	</div>
+</div>

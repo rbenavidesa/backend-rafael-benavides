@@ -1,0 +1,35 @@
+{{#if cartProducts}}
+	<h3 class='text-primary'>Listado de productos</h3>
+
+	<dl>
+		{{#each cartProducts}}
+			<dt> <h4>{{this.name}}</h4></dt>
+			<dd>- Codigo de producto: {{this.code}}</dd>
+			<dd>- Precio: {{this.price}}</dd>
+			<dd>- Descripción: {{this.description}}</dd>
+		{{/each}}
+	</dl>
+
+	<h1 class='text-primary'>Total a pagar: {{totalPrice}}</h1>
+
+	<form action='/api/carts/checkout' method='POST'>
+		<button type='submit' class='btn btn-warning' role='button'>Hacer Pedido</button>
+	</form>
+
+{{else if checkOutSuccess}}
+
+	<div class='alert alert-info' role='alert'>
+		El pedido fue procesado exitósamente!
+	</div>
+
+	<form action='/api/products/catalog' method='POST'>
+		<button type='submit' class='btn btn-warning' role='button'>Volver al catalogo</button>
+	</form>
+
+{{else}}
+
+	<div class='alert alert-warning' role='alert'>
+		El carro no tiene productos
+	</div>
+
+{{/if}}

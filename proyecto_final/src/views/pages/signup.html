@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>SignUp - Tercera Entrega Proyecto Final</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?37" />
+	</head>
+
+	<body>
+		<div class="container my-5">
+			<div class="jumbotron">
+				<h1>SIGNUP</h1>
+				<br />
+				<form id="signup-form" class="form" role="form" action="/signup" method="post" autocomplete="off" enctype="multipart/form-data">
+					<div class="form-group">
+						<input name="email" placeholder="email" class="form-control" type="email" required />
+					</div>
+					<div class="form-group">
+						<input name="password" placeholder="Password" class="form-control" type="password" required />
+					</div>
+					<div class="form-group">
+						<input name="firstName" placeholder="Nombre" class="form-control" type="text" required />
+					</div>
+					<div class="form-group">
+						<input name="lastName" placeholder="Apellido" class="form-control" type="text" required />
+					</div>
+					<div class="form-group">
+						<input name="age" placeholder="Edad" class="form-control" type="text" required />
+					</div>
+					<div class="form-group">
+						<input name="address" placeholder="Dirección" class="form-control" type="text" required />
+					</div>
+					<div class="form-group">
+						<input name="phoneNumber" id="phoneNumber" type="tel" class="form-control" required />
+					</div>
+					<div class="input-group mb-3">
+						<label class="input-group-text" for="inputGroupFile01">Upload</label>
+						<input name="profilePicture" type="file" class="form-control" id="inputGroupFile01" />
+					</div>
+
+					<div class="form-group">
+						<input class="btn btn-success my-3" type="submit" value="SingUp" />
+					</div>
+				</form>
+				<div>
+					<button class="btn btn-success my-3" onclick="login()">Ir al Login</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script src="build/js/intlTelInput.js"></script>
+	<script>
+		const phoneInputField = document.querySelector('#phoneNumber');
+		var phoneInput = window.intlTelInput(phoneInputField, {
+			// var input = document.querySelector('#phoneNumber');
+			// window.intlTelInput(input, {
+			// allowDropdown: false,
+			// autoHideDialCode: false,
+			// autoPlaceholder: "off",
+			// dropdownContainer: document.body,
+			// excludeCountries: ["us"],
+			// formatOnDisplay: false,
+			// geoIpLookup: function(callback) {
+			//   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+			//     var countryCode = (resp && resp.country) ? resp.country : "";
+			//     callback(countryCode);
+			//   });
+			// },
+			hiddenInput: 'full_number',
+			initialCountry: 'cl',
+			// localizedCountries: { 'de': 'Deutschland' },
+			// nationalMode: false,
+			// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+			placeholderNumberType: 'MOBILE',
+			preferredCountries: ['cl'],
+			separateDialCode: true,
+			utilsScript: 'build/js/utils.js',
+		});
+
+		$('#signup-form').submit(function (event) {
+			const phoneNumber = phoneInput.getNumber();
+			$('#phoneNumber').val(phoneNumber);
+		});
+	</script>
+
+	<script>
+		function redireccionar(pagina) {
+			location.href = pagina;
+		}
+		function login() {
+			redireccionar('/login');
+		}
+	</script>
+</html>
